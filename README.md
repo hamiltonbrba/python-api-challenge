@@ -1,9 +1,6 @@
 # python-api-challenge
 Module 6 Challenge - Python Api
 
-
-Got it! Here’s an updated README without mentioning asynchronous requests and focusing on the actual steps you took:
-
 ### README
 
 # Weather and Vacation Analysis

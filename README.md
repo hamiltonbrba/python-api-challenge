@@ -26,7 +26,7 @@ Create a Python script to visualize the weather of over 500 cities across the wo
    - Utilized the `citipy` library to identify the nearest city for each set of geographic coordinates.
    
 3. **Retrieve Weather Data**:
-   - Employed the OpenWeatherMap API to gather current weather data for each city.
+   - Used the OpenWeatherMap API to gather current weather data for each city.
    
 4. **Visualize Relationships**:
    - Created scatter plots to visualize relationships between latitude and temperature, humidity, cloudiness, and wind speed.
@@ -40,8 +40,7 @@ Create a Python script to visualize the weather of over 500 cities across the wo
 
 - **Humidity vs. Latitude**:
   - The relationship between humidity and latitude is weak in both hemispheres, with no clear trend indicating that humidity increases or decreases significantly with latitude.
-  - Humidity appears to be influenced more by local and regional factors.
-
+    
 - **Cloudiness vs. Latitude**:
   - Similar to humidity, the correlation between cloudiness and latitude is weak. The scatter plots show a random distribution of cloudiness values, suggesting that other factors are more influential.
 
@@ -54,7 +53,7 @@ Create a Python script to visualize the weather of over 500 cities across the wo
    - Python libraries: `matplotlib`, `pandas`, `numpy`, `requests`, `time`, `scipy`, `citipy`
    
 2. **Running the Script**:
-   - Ensure you have an API key from OpenWeatherMap.
+   - Make sure you have an API key from OpenWeatherMap.
    - Update the `weather_api_key` variable in the script with your API key.
    - Run the Jupyter notebook `WeatherPy.ipynb` to generate plots and analysis.
 
@@ -67,7 +66,7 @@ Create a Python script to visualize the weather of over 500 cities across the wo
 
 ### Objective
 
-Plan future vacations by narrowing down cities with ideal weather conditions and finding nearby hotels using Geoapify API.
+To plan future vacations by narrowing down cities with ideal weather conditions and finding nearby hotels using Geoapify API.
 
 ### Steps
 
@@ -86,7 +85,7 @@ Plan future vacations by narrowing down cities with ideal weather conditions and
    - Python libraries: `hvplot`, `pandas`, `requests`
    
 2. **Running the Script**:
-   - Ensure you have an API key from Geoapify.
+   - Make sure you have an API key from Geoapify.
    - Update the `geoapify_key` variable in the script with your API key.
    - Run the Jupyter notebook `VacationPy.ipynb` to generate maps and analysis.
 

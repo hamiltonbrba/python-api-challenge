@@ -32,6 +32,22 @@ Create a Python script to visualize the weather of over 500 cities across the wo
    - Created scatter plots to visualize relationships between latitude and temperature, humidity, cloudiness, and wind speed.
    - Performed linear regression analysis to further explore these relationships.
 
+### Results and Analysis
+
+- **Temperature vs. Latitude**:
+  - There is a clear negative correlation between temperature and latitude in both hemispheres, with temperatures generally decreasing as you move away from the equator.
+  - The Northern Hemisphere shows a stronger correlation due to larger landmasses causing more significant temperature variations.
+
+- **Humidity vs. Latitude**:
+  - The relationship between humidity and latitude is weak in both hemispheres, with no clear trend indicating that humidity increases or decreases significantly with latitude.
+  - Humidity appears to be influenced more by local and regional factors.
+
+- **Cloudiness vs. Latitude**:
+  - Similar to humidity, the correlation between cloudiness and latitude is weak. The scatter plots show a random distribution of cloudiness values, suggesting that other factors are more influential.
+
+- **Wind Speed vs. Latitude**:
+  - The correlation between wind speed and latitude is very weak, with extremely low r-squared values. Wind speed does not significantly change with latitude.
+
 ### Usage
 
 1. **Dependencies**:
@@ -46,7 +62,7 @@ Create a Python script to visualize the weather of over 500 cities across the wo
 
 - The section of code for generating random latitude and longitude coordinates was based on numpy's uniform distribution function examples.
 - The usage of the `citipy` library for finding the nearest city was adapted from the library's documentation.
-  
+
 ## Part 2: VacationPy
 
 ### Objective
@@ -56,7 +72,7 @@ Plan future vacations by narrowing down cities with ideal weather conditions and
 ### Steps
 
 1. **Filter Ideal Cities**:
-   - Narrowed down the `city_data_df` DataFrame to find cities with specific weather conditions.
+   - Narrowed down the `city_data_df` DataFrame to find cities with specific weather conditions (e.g., max temperature between 21 and 27 degrees, wind speed less than 4.5 m/s, and zero cloudiness).
    
 2. **Find Hotels**:
    - Used the Geoapify API to locate hotels within 10,000 meters of each city's coordinates.
@@ -74,9 +90,15 @@ Plan future vacations by narrowing down cities with ideal weather conditions and
    - Update the `geoapify_key` variable in the script with your API key.
    - Run the Jupyter notebook `VacationPy.ipynb` to generate maps and analysis.
 
-### Code Sources
+### Code Source
 
-- The methodology for filtering DataFrame based on conditions was based on pandas documentation.
+- The method used for filtering DataFrame based on conditions was based on pandas documentation and starter code provided by the assignment.
+
+### Summary of Analysis
+
+In both the Northern and Southern Hemispheres, there is a clear negative correlation between temperature and latitude, indicating that temperatures generally decrease as you move away from the equator. However, humidity, cloudiness, and wind speed show weak correlations with latitude, suggesting that these weather parameters are influenced by other local and regional factors rather than latitude alone.
+
+For the vacation planning part, cities with ideal weather conditions were successfully identified, and nearby hotels were located using the Geoapify API. This demonstrates the practical application of data analysis and API integration in planning vacations based on weather conditions.
 
 ## Notes on Code Source
 
@@ -99,4 +121,3 @@ Plan future vacations by narrowing down cities with ideal weather conditions and
 │   ├── Fig4.png
 └── README.md
 ```
-
